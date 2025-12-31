@@ -7,7 +7,11 @@ class AppState extends ChangeNotifier {
   AppData _data = AppData(lvs: [], entries: [], settings: AppSettings());
   bool _loaded = false;
 
-  List<Lv> get lvs => _data.lvs;
+  List<Lv> get lvs {
+  final list = [..._data.lvs];
+  list.sort((a, b) => a.title.compareTo(b.title));
+  return list;
+}
   List<ScheduleEntry> get entries => _data.entries;
   AppSettings get settings => _data.settings;
 
