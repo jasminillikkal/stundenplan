@@ -74,7 +74,7 @@ class _TimetableScreenState extends State<TimetableScreen> {
                     child: ExpansionTile(
                       title: Text(weekdayNames[i]),
                       children: entries.isEmpty
-                          ? [const ListTile(title: Text('Keine Termine'))]
+                          ? [const ListTile(title: Text('Keine Termine für diesen Tag'))]
                           : entries.map((e) {
                               final lv = state.lvById(e.lvId);
                               return ListTile(
