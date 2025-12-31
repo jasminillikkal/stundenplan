@@ -23,7 +23,7 @@ class SettingsScreen extends StatelessWidget {
           ),
           Card(
             child: ListTile(
-              title: const Text('Default Reminder (Minuten vorher)'),
+              title: const Text('Default Reminder (gilt für Termine mit „Default“)'),
               subtitle: Text('${st.settings.defaultReminderMinutes} Minuten'),
               trailing: const Icon(Icons.edit),
               onTap: () async {
