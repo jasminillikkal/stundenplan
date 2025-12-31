@@ -14,3 +14,26 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+# Stundenplan App
+
+Flutter-App zur Verwaltung eines persönlichen Stundenplans.
+
+## Funktionen
+- Lehrveranstaltungen anlegen und bearbeiten
+- Wochen- und Tagesansicht
+- Termine mit Start-/Endzeit und Raum
+- Default- und Custom-Reminder
+- Dark Mode
+- Lokale Speicherung
+- Backup & Restore als JSON-Datei
+
+## Technologie
+- Flutter
+- Provider (ChangeNotifier)
+- SharedPreferences
+
+## Starten der App
+```bash
+flutter pub get
+flutter run
